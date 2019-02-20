@@ -14,3 +14,12 @@ INSERT INTO product(id, name, price, tenant_id, created_by, updated_by, created_
 ('10', '榴莲', 990, null, null ,null, null, null, 0),
 ('11', '柚子', 291, null, null ,null, null, null, 0),
 ('12', '小番茄', 200, null, null ,null, null, null, 0);
+
+DROP TABLE IF EXISTS component;
+
+CREATE TABLE IF NOT EXISTS component(id varchar(32) unsigned not null primary key,name varchar(32),type varchar(30),version varchar(10),status varchar(20),tenant_id varchar(32),created_by varchar(32),updated_by varchar(32),created_at date,updated_at date, dr int(1));
+CREATE index idx_name ON component(name);
+INSERT INTO component(id, name,type, version, status,tenant_id, created_by, updated_by, created_at, updated_at, dr) VALUES
+('1', 'Mysql','基础设施','v1.0.0','上架', null, null, null, null, null, 0),
+('2', 'sonar', '基础设施','v1.0.0','上架', null, null ,null, null, null, 0),
+('3', 'spring boot', '集成框架','v1.0.0','上架', null, null ,null, null, null, 0)

@@ -74,9 +74,9 @@ public class ProductController {
 
     @GetMapping("/testSentinel")
     @SentinelResource(value = "testSentinel", blockHandler = "exceptionHandler")
-    public Payload testSentinel() {
+    public Integer testSentinel(@RequestParam Integer a, @RequestParam Integer b) {
         logger.info("远程Sentinel测试接口成功: Hello World!!");
-        return new Payload(true);
+        return a+b;
     }
 
     /**
