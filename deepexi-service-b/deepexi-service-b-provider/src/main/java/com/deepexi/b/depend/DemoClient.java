@@ -8,9 +8,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 /**
  * Created by donh on 2018/11/5.
  */
-@FeignClient("DEMO-SERVICE")
+@FeignClient("deepexi-service-a-provider")
 public interface DemoClient {
 
-    @RequestMapping(method = RequestMethod.GET, value = "/provider/add")
+    @RequestMapping(method = RequestMethod.GET, value = "/deepexi-service-a/api/v1/products/testSentinel")
     Integer add(@RequestParam(value = "a") Integer a, @RequestParam(value = "b") Integer b);
 }

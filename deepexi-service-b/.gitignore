@@ -22,7 +22,9 @@
 hs_err_pid*
 
 .idea
+*.iws
 *.iml
+*.ipr
 target/
 nohub.sh
 nohup.out

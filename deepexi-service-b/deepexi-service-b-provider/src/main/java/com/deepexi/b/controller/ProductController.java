@@ -22,7 +22,6 @@ import org.springframework.web.bind.annotation.*;
  */
 @Api(value = "productcontroller",description = "商品管理")
 @RestController
-@RequestMapping("/api/v1/products")
 public class ProductController {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());

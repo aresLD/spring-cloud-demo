@@ -4,7 +4,7 @@ import com.alibaba.csp.sentinel.annotation.SentinelResource;
 import com.alibaba.csp.sentinel.slots.block.BlockException;
 import com.deepexi.a.extension.ApplicationException;
 import com.deepexi.a.service.ProductService;
-import com.deepexi.a.depend.DemoClient;
+//import com.deepexi.a.depend.DemoClient;
 import com.deepexi.a.domain.eo.Product;
 import com.deepexi.util.config.Payload;
 
@@ -27,8 +27,8 @@ public class ProductController {
 
     private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
-    @Autowired
-    private DemoClient demolient; // feign让跨服务调用能够看起来像本地调用
+//    @Autowired
+//    private DemoClient demolient; // feign让跨服务调用能够看起来像本地调用
 
     @Autowired
     private ProductService productService;
@@ -91,9 +91,9 @@ public class ProductController {
         throw new ApplicationException("100", "熔断降级处理");
     }
 
-    @GetMapping("/testFeign")
-    public Payload testFeign(@RequestParam Integer a, @RequestParam Integer b) {
-        logger.info("远程调用成功: Hello World!!");
-        return new Payload(demolient.add(10, 20));
-    }
+//    @GetMapping("/testFeign")
+//    public Payload testFeign(@RequestParam Integer a, @RequestParam Integer b) {
+//        logger.info("远程调用成功: Hello World!!");
+//        return new Payload(demolient.add(10, 20));
+//    }
 }

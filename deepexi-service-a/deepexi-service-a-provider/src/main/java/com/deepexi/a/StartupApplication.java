@@ -11,7 +11,6 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * EnableFeignClients 用于启动Fegin功能
  */
 @EnableDiscoveryClient
-@EnableFeignClients
 @SpringBootApplication
 public class StartupApplication {
 
