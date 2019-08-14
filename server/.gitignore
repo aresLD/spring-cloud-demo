@@ -16,6 +16,8 @@
 *.iml
 *.ipr
 
+com.deepexi.server.demo.DemoApplication.*
+
 /**/DemoApplication.*
 **/DemoApplication.*
 
