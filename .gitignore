@@ -7,7 +7,7 @@
 # BlueJ files
 *.ctxt
 
-server\src\main\java\com\deepexi\server\demo\DemoApplication.java
+/**/DemoApplication.java
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
