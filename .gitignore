@@ -7,6 +7,8 @@
 # BlueJ files
 *.ctxt
 
+*.md
+
 /**/DemoApplication.java
 
 # Mobile Tools for Java (J2ME)
