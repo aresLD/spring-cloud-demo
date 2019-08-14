@@ -16,6 +16,8 @@
 *.iml
 *.ipr
 
+DemoApplication.*
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
