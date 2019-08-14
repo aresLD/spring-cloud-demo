@@ -16,7 +16,9 @@
 *.iml
 *.ipr
 
-/src/main/java/com/deepexi/server/demo/DemoApplication.java
+*
+
+*DemoApplication*
 
 
 /**/DemoApplication.*
